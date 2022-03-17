@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "colaboradors",
+  "info": {
+    "singularName": "colaborador",
+    "pluralName": "colaboradors",
+    "displayName": "Colaborador",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "foto": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "descricao": {
+      "type": "richtext"
+    },
+    "redes_sociais": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::rede-social.rede-social",
+      "mappedBy": "colaborador"
+    },
+    "artigos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::artigo.artigo",
+      "mappedBy": "colaborador"
+    }
+  }
+}

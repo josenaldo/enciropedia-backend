@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "redes_sociais",
+  "info": {
+    "singularName": "rede-social",
+    "pluralName": "redes-sociais",
+    "displayName": "Rede Social",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "colaborador": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::colaborador.colaborador",
+      "inversedBy": "redes_sociais"
+    },
+    "tipo": {
+      "type": "enumeration",
+      "enum": [
+        "Facebook",
+        "Github",
+        "Instagram",
+        "Kwai",
+        "LinkedIn",
+        "Pinterest",
+        "Reddit",
+        "Snapchat",
+        "Tiktok",
+        "Twitter",
+        "WhatsApp",
+        "YouTube",
+        "Outra"
+      ],
+      "default": "Outra"
+    }
+  }
+}
