@@ -1,0 +1,196 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::artigo.artigo",
+  "value": {
+    "uid": "api::artigo.artigo",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "titulo",
+      "defaultSortBy": "titulo",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "titulo": {
+        "edit": {
+          "label": "titulo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "titulo",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "descricao": {
+        "edit": {
+          "label": "descricao",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "descricao",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "conteudo": {
+        "edit": {
+          "label": "conteudo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "conteudo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "slug": {
+        "edit": {
+          "label": "slug",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "slug",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "categoria": {
+        "edit": {
+          "label": "categoria",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "categoria"
+        },
+        "list": {
+          "label": "categoria",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "imagem": {
+        "edit": {
+          "label": "imagem",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "imagem",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "colaborador": {
+        "edit": {
+          "label": "colaborador",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "nome"
+        },
+        "list": {
+          "label": "colaborador",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "titulo",
+        "descricao",
+        "slug"
+      ],
+      "editRelations": [
+        "categoria",
+        "colaborador"
+      ],
+      "edit": [
+        [
+          {
+            "name": "titulo",
+            "size": 6
+          },
+          {
+            "name": "descricao",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "conteudo",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "slug",
+            "size": 6
+          },
+          {
+            "name": "imagem",
+            "size": 6
+          }
+        ]
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

@@ -1,0 +1,142 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::categoria.categoria",
+  "value": {
+    "uid": "api::categoria.categoria",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "categoria",
+      "defaultSortBy": "categoria",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "categoria": {
+        "edit": {
+          "label": "categoria",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "categoria",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "rotulo": {
+        "edit": {
+          "label": "rotulo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "rotulo",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "slug": {
+        "edit": {
+          "label": "slug",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "slug",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "artigos": {
+        "edit": {
+          "label": "artigos",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "titulo"
+        },
+        "list": {
+          "label": "artigos",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "categoria",
+        "rotulo",
+        "slug"
+      ],
+      "edit": [
+        [
+          {
+            "name": "categoria",
+            "size": 6
+          },
+          {
+            "name": "rotulo",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "slug",
+            "size": 6
+          }
+        ]
+      ],
+      "editRelations": [
+        "artigos"
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

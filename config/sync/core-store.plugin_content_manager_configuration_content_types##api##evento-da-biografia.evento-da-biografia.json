@@ -1,0 +1,185 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::evento-da-biografia.evento-da-biografia",
+  "value": {
+    "uid": "api::evento-da-biografia.evento-da-biografia",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "titulo",
+      "defaultSortBy": "data",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "ID",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "data": {
+        "edit": {
+          "label": "Data ou período",
+          "description": "Data do evento. Pode ser uma data completa, apenas um ano ou o período.",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "data",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "descricao": {
+        "edit": {
+          "label": "Descrição",
+          "description": "Uma pequena descrição do evento.",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Descrição",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "conteudo": {
+        "edit": {
+          "label": "Conteúdo",
+          "description": "Texto sobre o evento.",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "conteudo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "imagem": {
+        "edit": {
+          "label": "Imagem",
+          "description": "Uma imagem associada ao evento. Será a imagem principal da página.",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "imagem",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "titulo": {
+        "edit": {
+          "label": "Título",
+          "description": "Título do evento",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "titulo",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "slug": {
+        "edit": {
+          "label": "Slug",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "slug",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "edit": [
+        [
+          {
+            "name": "titulo",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "data",
+            "size": 6
+          },
+          {
+            "name": "imagem",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "descricao",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "conteudo",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "slug",
+            "size": 12
+          }
+        ]
+      ],
+      "editRelations": [],
+      "list": [
+        "id",
+        "descricao",
+        "data",
+        "titulo"
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}
