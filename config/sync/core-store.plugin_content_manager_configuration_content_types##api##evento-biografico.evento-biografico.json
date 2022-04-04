@@ -1,14 +1,14 @@
 {
-  "key": "plugin_content_manager_configuration_content_types::api::categoria.categoria",
+  "key": "plugin_content_manager_configuration_content_types::api::evento-biografico.evento-biografico",
   "value": {
-    "uid": "api::categoria.categoria",
+    "uid": "api::evento-biografico.evento-biografico",
     "settings": {
       "bulkable": true,
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "categoria",
-      "defaultSortBy": "categoria",
+      "mainField": "titulo",
+      "defaultSortBy": "titulo",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -20,38 +20,52 @@
           "sortable": true
         }
       },
-      "categoria": {
+      "titulo": {
         "edit": {
-          "label": "Categoria",
-          "description": "Categoria do Artigo",
+          "label": "titulo",
+          "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "categoria",
+          "label": "titulo",
           "searchable": true,
           "sortable": true
         }
       },
-      "rotulo": {
+      "conteudo": {
         "edit": {
-          "label": "Rótulo da Categoria",
-          "description": "Texto que representa a categoria",
+          "label": "conteudo",
+          "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "rotulo",
+          "label": "conteudo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "resumo": {
+        "edit": {
+          "label": "resumo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "resumo",
           "searchable": true,
           "sortable": true
         }
       },
       "slug": {
         "edit": {
-          "label": "Slug",
-          "description": "Slug da categoria. ",
+          "label": "slug",
+          "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
@@ -62,17 +76,44 @@
           "sortable": true
         }
       },
-      "artigos": {
+      "ano": {
         "edit": {
-          "label": "Artigos",
+          "label": "ano",
           "description": "",
           "placeholder": "",
           "visible": true,
-          "editable": true,
-          "mainField": "titulo"
+          "editable": true
         },
         "list": {
-          "label": "artigos",
+          "label": "ano",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "ordem": {
+        "edit": {
+          "label": "ordem",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "ordem",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "imagem": {
+        "edit": {
+          "label": "imagem",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "imagem",
           "searchable": false,
           "sortable": false
         }
@@ -107,34 +148,52 @@
       }
     },
     "layouts": {
+      "list": [
+        "id",
+        "titulo",
+        "resumo",
+        "slug"
+      ],
+      "editRelations": [],
       "edit": [
         [
           {
-            "name": "categoria",
+            "name": "titulo",
             "size": 6
           }
         ],
         [
           {
-            "name": "rotulo",
-            "size": 6
+            "name": "conteudo",
+            "size": 12
           }
         ],
         [
+          {
+            "name": "resumo",
+            "size": 6
+          },
           {
             "name": "slug",
             "size": 6
           }
+        ],
+        [
+          {
+            "name": "ano",
+            "size": 4
+          },
+          {
+            "name": "ordem",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "imagem",
+            "size": 6
+          }
         ]
-      ],
-      "editRelations": [
-        "artigos"
-      ],
-      "list": [
-        "id",
-        "categoria",
-        "rotulo",
-        "slug"
       ]
     }
   },

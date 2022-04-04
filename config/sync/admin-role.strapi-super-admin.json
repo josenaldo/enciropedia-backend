@@ -12,9 +12,9 @@
           "descricao",
           "conteudo",
           "slug",
-          "categoria",
           "imagem",
-          "colaborador"
+          "colaborador",
+          "categoria"
         ]
       },
       "conditions": []
@@ -40,9 +40,9 @@
           "descricao",
           "conteudo",
           "slug",
-          "categoria",
           "imagem",
-          "colaborador"
+          "colaborador",
+          "categoria"
         ]
       },
       "conditions": []
@@ -56,9 +56,9 @@
           "descricao",
           "conteudo",
           "slug",
-          "categoria",
           "imagem",
-          "colaborador"
+          "colaborador",
+          "categoria"
         ]
       },
       "conditions": []
@@ -123,8 +123,8 @@
           "email",
           "foto",
           "descricao",
-          "redes_sociais",
-          "artigos"
+          "artigos",
+          "redes_sociais"
         ]
       },
       "conditions": []
@@ -150,8 +150,8 @@
           "email",
           "foto",
           "descricao",
-          "redes_sociais",
-          "artigos"
+          "artigos",
+          "redes_sociais"
         ]
       },
       "conditions": []
@@ -165,65 +165,68 @@
           "email",
           "foto",
           "descricao",
-          "redes_sociais",
-          "artigos"
+          "artigos",
+          "redes_sociais"
         ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.create",
-      "subject": "api::evento-da-biografia.evento-da-biografia",
+      "subject": "api::evento-biografico.evento-biografico",
       "properties": {
         "fields": [
-          "data",
-          "descricao",
-          "conteudo",
-          "imagem",
           "titulo",
-          "slug"
+          "conteudo",
+          "resumo",
+          "slug",
+          "ano",
+          "ordem",
+          "imagem"
         ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::evento-da-biografia.evento-da-biografia",
+      "subject": "api::evento-biografico.evento-biografico",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::evento-da-biografia.evento-da-biografia",
+      "subject": "api::evento-biografico.evento-biografico",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::evento-da-biografia.evento-da-biografia",
+      "subject": "api::evento-biografico.evento-biografico",
       "properties": {
         "fields": [
-          "data",
-          "descricao",
-          "conteudo",
-          "imagem",
           "titulo",
-          "slug"
+          "conteudo",
+          "resumo",
+          "slug",
+          "ano",
+          "ordem",
+          "imagem"
         ]
       },
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.update",
-      "subject": "api::evento-da-biografia.evento-da-biografia",
+      "subject": "api::evento-biografico.evento-biografico",
       "properties": {
         "fields": [
-          "data",
-          "descricao",
-          "conteudo",
-          "imagem",
           "titulo",
-          "slug"
+          "conteudo",
+          "resumo",
+          "slug",
+          "ano",
+          "ordem",
+          "imagem"
         ]
       },
       "conditions": []
@@ -327,7 +330,6 @@
       "properties": {
         "fields": [
           "link",
-          "colaborador",
           "tipo"
         ]
       },
@@ -351,7 +353,6 @@
       "properties": {
         "fields": [
           "link",
-          "colaborador",
           "tipo"
         ]
       },
@@ -363,50 +364,7 @@
       "properties": {
         "fields": [
           "link",
-          "colaborador",
           "tipo"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::tag.tag",
-      "properties": {
-        "fields": [
-          "tag"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::tag.tag",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::tag.tag",
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::tag.tag",
-      "properties": {
-        "fields": [
-          "tag"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::tag.tag",
-      "properties": {
-        "fields": [
-          "tag"
         ]
       },
       "conditions": []
@@ -617,6 +575,30 @@
     },
     {
       "action": "plugin::content-type-builder.read",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::documentation.read",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::documentation.settings.read",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::documentation.settings.regenerate",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::documentation.settings.update",
       "subject": null,
       "properties": {},
       "conditions": []

@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "colaboradors",
+  "collectionName": "colaboradores",
   "info": {
     "singularName": "colaborador",
-    "pluralName": "colaboradors",
-    "displayName": "Colaborador",
-    "description": ""
+    "pluralName": "colaboradores",
+    "displayName": "Colaborador"
   },
   "options": {
     "draftAndPublish": true
@@ -22,27 +21,25 @@
       "unique": true
     },
     "foto": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "type": "media",
+      "multiple": false
     },
     "descricao": {
       "type": "richtext"
-    },
-    "redes_sociais": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::rede-social.rede-social",
-      "mappedBy": "colaborador"
     },
     "artigos": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::artigo.artigo",
       "mappedBy": "colaborador"
+    },
+    "redes_sociais": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::rede-social.rede-social"
     }
   }
 }

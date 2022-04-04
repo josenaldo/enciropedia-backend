@@ -34,21 +34,6 @@
           "sortable": true
         }
       },
-      "colaborador": {
-        "edit": {
-          "label": "colaborador",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "nome"
-        },
-        "list": {
-          "label": "colaborador",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "tipo": {
         "edit": {
           "label": "tipo",
@@ -96,7 +81,6 @@
       "list": [
         "id",
         "link",
-        "colaborador",
         "createdAt"
       ],
       "edit": [
@@ -111,9 +95,7 @@
           }
         ]
       ],
-      "editRelations": [
-        "colaborador"
-      ]
+      "editRelations": []
     }
   },
   "type": "object",

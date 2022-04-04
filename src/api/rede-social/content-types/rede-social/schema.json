@@ -16,12 +16,6 @@
       "type": "string",
       "required": true
     },
-    "colaborador": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::colaborador.colaborador",
-      "inversedBy": "redes_sociais"
-    },
     "tipo": {
       "type": "enumeration",
       "enum": [

@@ -4,9 +4,9 @@ Strapi comes with a full featured [Command Line Interface](https://docs.strapi.i
 
 ### `develop`
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
+Para iniciar o Strapi em ambiente de desenvolvimento, com autoreload **ativado**. [Veja mais](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
 
-```
+```sh
 npm run develop
 # or
 yarn develop
@@ -14,9 +14,9 @@ yarn develop
 
 ### `start`
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
+Para iniciar o Strapi em ambiente de desenvolvimento, com autoreload **desativado**. [Veja mais](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
 
-```
+```sh
 npm run start
 # or
 yarn start
@@ -24,34 +24,43 @@ yarn start
 
 ### `build`
 
-Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
+Para construir o painel de adminsitração. [Veja mais](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
 
-```
+```sh
 npm run build
 # or
 yarn build
 ```
 
-## ⚙️ Deployment
+## Banco de dados
 
-Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
+Para executar a Enciropedia localmente, é necessário instalar o postgres na versão xxxx
 
-## 📚 Learn more
+## Problemas
 
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://docs.strapi.io) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
+**P: Quando eu entro no admin, algumás áreas mostram apenas páginas em branco. O que faço?**
 
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
+Nesse caso, é preciso reiniciar o ambiente:
 
-## ✨ Community
+1. Apague as seguintes pastas:
+    1. .cache
+    2. build
+    3. node_modules
+    Para apagar a `node_modules`, use o comando `npx rimraf node_modules`
+2. Apague os arquivos:
+    1. yarn.lock
+    2. package-lock.json
+3. Execute o `npm install`
+4. Execute o `npm run build`
+5. Pronto. Pode rodar o servidor de desenvolvimento com `npm run develop`
 
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
+```sh
+npx rimraf node_modules
 
----
+npm install
 
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+npm run build
+
+npm run develop
+
+```

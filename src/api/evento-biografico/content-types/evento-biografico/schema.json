@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "eventos_biograficos",
+  "info": {
+    "singularName": "evento-biografico",
+    "pluralName": "eventos-biograficos",
+    "displayName": "Evento Biográfico"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "conteudo": {
+      "type": "richtext",
+      "required": true
+    },
+    "resumo": {
+      "type": "text",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "titulo",
+      "required": true
+    },
+    "ano": {
+      "type": "integer",
+      "required": true
+    },
+    "ordem": {
+      "type": "integer",
+      "default": 1,
+      "required": true
+    },
+    "imagem": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -76,21 +76,6 @@
           "sortable": true
         }
       },
-      "categoria": {
-        "edit": {
-          "label": "categoria",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "categoria"
-        },
-        "list": {
-          "label": "categoria",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "imagem": {
         "edit": {
           "label": "imagem",
@@ -116,6 +101,21 @@
         },
         "list": {
           "label": "colaborador",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "categoria": {
+        "edit": {
+          "label": "categoria",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "categoria"
+        },
+        "list": {
+          "label": "categoria",
           "searchable": true,
           "sortable": true
         }
@@ -156,10 +156,6 @@
         "descricao",
         "slug"
       ],
-      "editRelations": [
-        "categoria",
-        "colaborador"
-      ],
       "edit": [
         [
           {
@@ -187,6 +183,10 @@
             "size": 6
           }
         ]
+      ],
+      "editRelations": [
+        "colaborador",
+        "categoria"
       ]
     }
   },

@@ -1,0 +1,10 @@
+{
+  "key": "plugin_documentation_config",
+  "value": {
+    "restrictedAccess": true,
+    "password": "$2a$10$yFZycsvxwEqIVQmrSD14duGdz1bFmnALym5BLYVSTZYZB0SqfXrYm"
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

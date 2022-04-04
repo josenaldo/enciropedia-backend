@@ -29,12 +29,6 @@
       "targetField": "titulo",
       "required": true
     },
-    "categoria": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::categoria.categoria",
-      "inversedBy": "artigos"
-    },
     "imagem": {
       "type": "media",
       "multiple": false,
@@ -47,6 +41,12 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::colaborador.colaborador",
+      "inversedBy": "artigos"
+    },
+    "categoria": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::categoria.categoria",
       "inversedBy": "artigos"
     }
   }

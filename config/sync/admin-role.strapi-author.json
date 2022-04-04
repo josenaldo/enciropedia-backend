@@ -5,14 +5,250 @@
   "permissions": [
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::artigo.artigo",
+      "properties": {
+        "fields": [
+          "categoria",
+          "colaborador",
+          "conteudo",
+          "descricao",
+          "imagem",
+          "slug",
+          "titulo"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::artigo.artigo",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::artigo.artigo",
+      "properties": {
+        "fields": [
+          "categoria",
+          "colaborador",
+          "conteudo",
+          "descricao",
+          "imagem",
+          "slug",
+          "titulo"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::artigo.artigo",
+      "properties": {
+        "fields": [
+          "categoria",
+          "colaborador",
+          "conteudo",
+          "descricao",
+          "imagem",
+          "slug",
+          "titulo"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::categoria.categoria",
+      "properties": {
+        "fields": [
+          "artigos",
+          "categoria",
+          "rotulo",
+          "slug"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::categoria.categoria",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::categoria.categoria",
+      "properties": {
+        "fields": [
+          "artigos",
+          "categoria",
+          "rotulo",
+          "slug"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::categoria.categoria",
+      "properties": {
+        "fields": [
+          "artigos",
+          "categoria",
+          "rotulo",
+          "slug"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::colaborador.colaborador",
+      "properties": {
+        "fields": [
+          "artigos",
+          "descricao",
+          "email",
+          "foto",
+          "nome",
+          "redes_sociais"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::colaborador.colaborador",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::colaborador.colaborador",
+      "properties": {
+        "fields": [
+          "artigos",
+          "descricao",
+          "email",
+          "foto",
+          "nome",
+          "redes_sociais"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::colaborador.colaborador",
+      "properties": {
+        "fields": [
+          "artigos",
+          "descricao",
+          "email",
+          "foto",
+          "nome",
+          "redes_sociais"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::evento-biografico.evento-biografico",
+      "properties": {
+        "fields": [
+          "ano",
+          "conteudo",
+          "imagem",
+          "ordem",
+          "resumo",
+          "slug",
+          "titulo"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::evento-biografico.evento-biografico",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::evento-biografico.evento-biografico",
+      "properties": {
+        "fields": [
+          "ano",
+          "conteudo",
+          "imagem",
+          "ordem",
+          "resumo",
+          "slug",
+          "titulo"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::evento-biografico.evento-biografico",
+      "properties": {
+        "fields": [
+          "ano",
+          "conteudo",
+          "imagem",
+          "ordem",
+          "resumo",
+          "slug",
+          "titulo"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::global.global",
       "properties": {
         "fields": [
-          "siteName",
-          "defaultSeo.metaTitle",
           "defaultSeo.metaDescription",
+          "defaultSeo.metaTitle",
           "defaultSeo.shareImage",
-          "favicon"
+          "favicon",
+          "siteName"
         ]
       },
       "conditions": [
@@ -32,11 +268,11 @@
       "subject": "api::global.global",
       "properties": {
         "fields": [
-          "siteName",
-          "defaultSeo.metaTitle",
           "defaultSeo.metaDescription",
+          "defaultSeo.metaTitle",
           "defaultSeo.shareImage",
-          "favicon"
+          "favicon",
+          "siteName"
         ]
       },
       "conditions": [
@@ -48,11 +284,11 @@
       "subject": "api::global.global",
       "properties": {
         "fields": [
-          "siteName",
-          "defaultSeo.metaTitle",
           "defaultSeo.metaDescription",
+          "defaultSeo.metaTitle",
           "defaultSeo.shareImage",
-          "favicon"
+          "favicon",
+          "siteName"
         ]
       },
       "conditions": [
@@ -64,10 +300,10 @@
       "subject": "api::homepage.homepage",
       "properties": {
         "fields": [
-          "seo.metaTitle",
+          "hero.title",
           "seo.metaDescription",
-          "seo.shareImage",
-          "hero.title"
+          "seo.metaTitle",
+          "seo.shareImage"
         ]
       },
       "conditions": [
@@ -87,10 +323,10 @@
       "subject": "api::homepage.homepage",
       "properties": {
         "fields": [
-          "seo.metaTitle",
+          "hero.title",
           "seo.metaDescription",
-          "seo.shareImage",
-          "hero.title"
+          "seo.metaTitle",
+          "seo.shareImage"
         ]
       },
       "conditions": [
@@ -102,10 +338,57 @@
       "subject": "api::homepage.homepage",
       "properties": {
         "fields": [
-          "seo.metaTitle",
+          "hero.title",
           "seo.metaDescription",
-          "seo.shareImage",
-          "hero.title"
+          "seo.metaTitle",
+          "seo.shareImage"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::rede-social.rede-social",
+      "properties": {
+        "fields": [
+          "link",
+          "tipo"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::rede-social.rede-social",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::rede-social.rede-social",
+      "properties": {
+        "fields": [
+          "link",
+          "tipo"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::rede-social.rede-social",
+      "properties": {
+        "fields": [
+          "link",
+          "tipo"
         ]
       },
       "conditions": [

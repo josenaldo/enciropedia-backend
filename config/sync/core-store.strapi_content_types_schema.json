@@ -1378,12 +1378,6 @@
           "targetField": "titulo",
           "required": true
         },
-        "categoria": {
-          "type": "relation",
-          "relation": "manyToOne",
-          "target": "api::categoria.categoria",
-          "inversedBy": "artigos"
-        },
         "imagem": {
           "type": "media",
           "multiple": false,
@@ -1396,6 +1390,12 @@
           "type": "relation",
           "relation": "manyToOne",
           "target": "api::colaborador.colaborador",
+          "inversedBy": "artigos"
+        },
+        "categoria": {
+          "type": "relation",
+          "relation": "manyToOne",
+          "target": "api::categoria.categoria",
           "inversedBy": "artigos"
         },
         "createdAt": {
@@ -1461,12 +1461,6 @@
             "targetField": "titulo",
             "required": true
           },
-          "categoria": {
-            "type": "relation",
-            "relation": "manyToOne",
-            "target": "api::categoria.categoria",
-            "inversedBy": "artigos"
-          },
           "imagem": {
             "type": "media",
             "multiple": false,
@@ -1479,6 +1473,12 @@
             "type": "relation",
             "relation": "manyToOne",
             "target": "api::colaborador.colaborador",
+            "inversedBy": "artigos"
+          },
+          "categoria": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::categoria.categoria",
             "inversedBy": "artigos"
           }
         },
@@ -1603,12 +1603,11 @@
     },
     "api::colaborador.colaborador": {
       "kind": "collectionType",
-      "collectionName": "colaboradors",
+      "collectionName": "colaboradores",
       "info": {
         "singularName": "colaborador",
-        "pluralName": "colaboradors",
-        "displayName": "Colaborador",
-        "description": ""
+        "pluralName": "colaboradores",
+        "displayName": "Colaborador"
       },
       "options": {
         "draftAndPublish": true
@@ -1625,27 +1624,25 @@
           "unique": true
         },
         "foto": {
-          "type": "media",
-          "multiple": false,
-          "required": false,
           "allowedTypes": [
             "images"
-          ]
+          ],
+          "type": "media",
+          "multiple": false
         },
         "descricao": {
           "type": "richtext"
-        },
-        "redes_sociais": {
-          "type": "relation",
-          "relation": "oneToMany",
-          "target": "api::rede-social.rede-social",
-          "mappedBy": "colaborador"
         },
         "artigos": {
           "type": "relation",
           "relation": "oneToMany",
           "target": "api::artigo.artigo",
           "mappedBy": "colaborador"
+        },
+        "redes_sociais": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "api::rede-social.rede-social"
         },
         "createdAt": {
           "type": "datetime"
@@ -1681,12 +1678,11 @@
         }
       },
       "__schema__": {
-        "collectionName": "colaboradors",
+        "collectionName": "colaboradores",
         "info": {
           "singularName": "colaborador",
-          "pluralName": "colaboradors",
-          "displayName": "Colaborador",
-          "description": ""
+          "pluralName": "colaboradores",
+          "displayName": "Colaborador"
         },
         "options": {
           "draftAndPublish": true
@@ -1703,27 +1699,25 @@
             "unique": true
           },
           "foto": {
-            "type": "media",
-            "multiple": false,
-            "required": false,
             "allowedTypes": [
               "images"
-            ]
+            ],
+            "type": "media",
+            "multiple": false
           },
           "descricao": {
             "type": "richtext"
-          },
-          "redes_sociais": {
-            "type": "relation",
-            "relation": "oneToMany",
-            "target": "api::rede-social.rede-social",
-            "mappedBy": "colaborador"
           },
           "artigos": {
             "type": "relation",
             "relation": "oneToMany",
             "target": "api::artigo.artigo",
             "mappedBy": "colaborador"
+          },
+          "redes_sociais": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::rede-social.rede-social"
           }
         },
         "kind": "collectionType"
@@ -1737,48 +1731,51 @@
       "actions": {},
       "lifecycles": {}
     },
-    "api::evento-da-biografia.evento-da-biografia": {
+    "api::evento-biografico.evento-biografico": {
       "kind": "collectionType",
-      "collectionName": "evento_da_biografias",
+      "collectionName": "eventos_biograficos",
       "info": {
-        "singularName": "evento-da-biografia",
-        "pluralName": "evento-da-biografias",
-        "displayName": "Evento da Biografia",
-        "description": ""
+        "singularName": "evento-biografico",
+        "pluralName": "eventos-biograficos",
+        "displayName": "Evento Biográfico"
       },
       "options": {
         "draftAndPublish": true
       },
       "pluginOptions": {},
       "attributes": {
-        "data": {
+        "titulo": {
           "type": "string",
-          "required": true
-        },
-        "descricao": {
-          "type": "text",
           "required": true
         },
         "conteudo": {
           "type": "richtext",
           "required": true
         },
-        "imagem": {
-          "type": "media",
-          "multiple": false,
-          "required": false,
-          "allowedTypes": [
-            "images"
-          ]
-        },
-        "titulo": {
-          "type": "string",
+        "resumo": {
+          "type": "text",
           "required": true
         },
         "slug": {
           "type": "uid",
           "targetField": "titulo",
           "required": true
+        },
+        "ano": {
+          "type": "integer",
+          "required": true
+        },
+        "ordem": {
+          "type": "integer",
+          "default": 1,
+          "required": true
+        },
+        "imagem": {
+          "allowedTypes": [
+            "images"
+          ],
+          "type": "media",
+          "multiple": false
         },
         "createdAt": {
           "type": "datetime"
@@ -1814,56 +1811,59 @@
         }
       },
       "__schema__": {
-        "collectionName": "evento_da_biografias",
+        "collectionName": "eventos_biograficos",
         "info": {
-          "singularName": "evento-da-biografia",
-          "pluralName": "evento-da-biografias",
-          "displayName": "Evento da Biografia",
-          "description": ""
+          "singularName": "evento-biografico",
+          "pluralName": "eventos-biograficos",
+          "displayName": "Evento Biográfico"
         },
         "options": {
           "draftAndPublish": true
         },
         "pluginOptions": {},
         "attributes": {
-          "data": {
+          "titulo": {
             "type": "string",
-            "required": true
-          },
-          "descricao": {
-            "type": "text",
             "required": true
           },
           "conteudo": {
             "type": "richtext",
             "required": true
           },
-          "imagem": {
-            "type": "media",
-            "multiple": false,
-            "required": false,
-            "allowedTypes": [
-              "images"
-            ]
-          },
-          "titulo": {
-            "type": "string",
+          "resumo": {
+            "type": "text",
             "required": true
           },
           "slug": {
             "type": "uid",
             "targetField": "titulo",
             "required": true
+          },
+          "ano": {
+            "type": "integer",
+            "required": true
+          },
+          "ordem": {
+            "type": "integer",
+            "default": 1,
+            "required": true
+          },
+          "imagem": {
+            "allowedTypes": [
+              "images"
+            ],
+            "type": "media",
+            "multiple": false
           }
         },
         "kind": "collectionType"
       },
       "modelType": "contentType",
-      "modelName": "evento-da-biografia",
+      "modelName": "evento-biografico",
       "connection": "default",
-      "uid": "api::evento-da-biografia.evento-da-biografia",
-      "apiName": "evento-da-biografia",
-      "globalId": "EventoDaBiografia",
+      "uid": "api::evento-biografico.evento-biografico",
+      "apiName": "evento-biografico",
+      "globalId": "EventoBiografico",
       "actions": {},
       "lifecycles": {}
     },
@@ -2079,12 +2079,6 @@
           "type": "string",
           "required": true
         },
-        "colaborador": {
-          "type": "relation",
-          "relation": "manyToOne",
-          "target": "api::colaborador.colaborador",
-          "inversedBy": "redes_sociais"
-        },
         "tipo": {
           "type": "enumeration",
           "enum": [
@@ -2154,12 +2148,6 @@
             "type": "string",
             "required": true
           },
-          "colaborador": {
-            "type": "relation",
-            "relation": "manyToOne",
-            "target": "api::colaborador.colaborador",
-            "inversedBy": "redes_sociais"
-          },
           "tipo": {
             "type": "enumeration",
             "enum": [
@@ -2188,88 +2176,6 @@
       "uid": "api::rede-social.rede-social",
       "apiName": "rede-social",
       "globalId": "RedeSocial",
-      "actions": {},
-      "lifecycles": {}
-    },
-    "api::tag.tag": {
-      "kind": "collectionType",
-      "collectionName": "tags",
-      "info": {
-        "singularName": "tag",
-        "pluralName": "tags",
-        "displayName": "Tag",
-        "description": ""
-      },
-      "options": {
-        "draftAndPublish": true
-      },
-      "pluginOptions": {},
-      "attributes": {
-        "tag": {
-          "type": "string",
-          "required": true,
-          "unique": true
-        },
-        "createdAt": {
-          "type": "datetime"
-        },
-        "updatedAt": {
-          "type": "datetime"
-        },
-        "publishedAt": {
-          "type": "datetime",
-          "configurable": false,
-          "writable": true,
-          "visible": false
-        },
-        "createdBy": {
-          "type": "relation",
-          "relation": "oneToOne",
-          "target": "admin::user",
-          "configurable": false,
-          "writable": false,
-          "visible": false,
-          "useJoinTable": false,
-          "private": true
-        },
-        "updatedBy": {
-          "type": "relation",
-          "relation": "oneToOne",
-          "target": "admin::user",
-          "configurable": false,
-          "writable": false,
-          "visible": false,
-          "useJoinTable": false,
-          "private": true
-        }
-      },
-      "__schema__": {
-        "collectionName": "tags",
-        "info": {
-          "singularName": "tag",
-          "pluralName": "tags",
-          "displayName": "Tag",
-          "description": ""
-        },
-        "options": {
-          "draftAndPublish": true
-        },
-        "pluginOptions": {},
-        "attributes": {
-          "tag": {
-            "type": "string",
-            "required": true,
-            "unique": true
-          }
-        },
-        "kind": "collectionType"
-      },
-      "modelType": "contentType",
-      "modelName": "tag",
-      "connection": "default",
-      "uid": "api::tag.tag",
-      "apiName": "tag",
-      "globalId": "Tag",
       "actions": {},
       "lifecycles": {}
     }

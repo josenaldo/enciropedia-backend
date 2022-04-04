@@ -15,57 +15,57 @@
       "id": {
         "edit": {},
         "list": {
-          "label": "ID",
+          "label": "id",
           "searchable": true,
           "sortable": true
         }
       },
       "nome": {
         "edit": {
-          "label": "Nome",
-          "description": "Nome do colaborador",
+          "label": "nome",
+          "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "Nome",
+          "label": "nome",
           "searchable": true,
           "sortable": true
         }
       },
       "email": {
         "edit": {
-          "label": "Email",
-          "description": "Email do colaborador",
+          "label": "email",
+          "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "Email",
+          "label": "email",
           "searchable": true,
           "sortable": true
         }
       },
       "foto": {
         "edit": {
-          "label": "Foto",
-          "description": "Foto ou avatar do colaborador",
+          "label": "foto",
+          "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "Foto",
+          "label": "foto",
           "searchable": false,
           "sortable": false
         }
       },
       "descricao": {
         "edit": {
-          "label": "Descrição",
-          "description": "Texto curto sobre o colaborador",
+          "label": "descricao",
+          "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
@@ -76,25 +76,10 @@
           "sortable": false
         }
       },
-      "redes_sociais": {
-        "edit": {
-          "label": "Redes sociais",
-          "description": "Links para redes sociais",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "link"
-        },
-        "list": {
-          "label": "redes_sociais",
-          "searchable": false,
-          "sortable": false
-        }
-      },
       "artigos": {
         "edit": {
-          "label": "Artigos",
-          "description": "Artigos do colaborador",
+          "label": "artigos",
+          "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true,
@@ -102,6 +87,21 @@
         },
         "list": {
           "label": "artigos",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "redes_sociais": {
+        "edit": {
+          "label": "redes_sociais",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "link"
+        },
+        "list": {
+          "label": "redes_sociais",
           "searchable": false,
           "sortable": false
         }
@@ -136,23 +136,25 @@
       }
     },
     "layouts": {
+      "list": [
+        "id",
+        "nome",
+        "email",
+        "foto"
+      ],
+      "editRelations": [
+        "artigos",
+        "redes_sociais"
+      ],
       "edit": [
         [
           {
             "name": "nome",
-            "size": 12
-          }
-        ],
-        [
+            "size": 6
+          },
           {
             "name": "email",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "descricao",
-            "size": 12
+            "size": 6
           }
         ],
         [
@@ -160,16 +162,13 @@
             "name": "foto",
             "size": 6
           }
+        ],
+        [
+          {
+            "name": "descricao",
+            "size": 12
+          }
         ]
-      ],
-      "editRelations": [
-        "redes_sociais",
-        "artigos"
-      ],
-      "list": [
-        "id",
-        "email",
-        "nome"
       ]
     }
   },
