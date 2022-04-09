@@ -1737,7 +1737,8 @@
       "info": {
         "singularName": "evento-biografico",
         "pluralName": "eventos-biograficos",
-        "displayName": "Evento Biográfico"
+        "displayName": "Evento Biográfico",
+        "description": ""
       },
       "options": {
         "draftAndPublish": true
@@ -1761,21 +1762,32 @@
           "targetField": "titulo",
           "required": true
         },
-        "ano": {
-          "type": "integer",
-          "required": true
-        },
         "ordem": {
           "type": "integer",
           "default": 1,
           "required": true
         },
         "imagem": {
+          "type": "media",
+          "multiple": false,
+          "required": false,
           "allowedTypes": [
             "images"
-          ],
-          "type": "media",
-          "multiple": false
+          ]
+        },
+        "anterior": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "api::evento-biografico.evento-biografico"
+        },
+        "proximo": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "api::evento-biografico.evento-biografico"
+        },
+        "ano": {
+          "type": "string",
+          "required": true
         },
         "createdAt": {
           "type": "datetime"
@@ -1815,7 +1827,8 @@
         "info": {
           "singularName": "evento-biografico",
           "pluralName": "eventos-biograficos",
-          "displayName": "Evento Biográfico"
+          "displayName": "Evento Biográfico",
+          "description": ""
         },
         "options": {
           "draftAndPublish": true
@@ -1839,21 +1852,32 @@
             "targetField": "titulo",
             "required": true
           },
-          "ano": {
-            "type": "integer",
-            "required": true
-          },
           "ordem": {
             "type": "integer",
             "default": 1,
             "required": true
           },
           "imagem": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
             "allowedTypes": [
               "images"
-            ],
-            "type": "media",
-            "multiple": false
+            ]
+          },
+          "anterior": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::evento-biografico.evento-biografico"
+          },
+          "proximo": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::evento-biografico.evento-biografico"
+          },
+          "ano": {
+            "type": "string",
+            "required": true
           }
         },
         "kind": "collectionType"

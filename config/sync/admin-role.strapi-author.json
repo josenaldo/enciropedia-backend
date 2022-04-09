@@ -182,13 +182,13 @@
       "subject": "api::evento-biografico.evento-biografico",
       "properties": {
         "fields": [
-          "ano",
+          "titulo",
           "conteudo",
-          "imagem",
-          "ordem",
           "resumo",
           "slug",
-          "titulo"
+          "ordem",
+          "imagem",
+          "ano"
         ]
       },
       "conditions": [
@@ -208,13 +208,13 @@
       "subject": "api::evento-biografico.evento-biografico",
       "properties": {
         "fields": [
-          "ano",
+          "titulo",
           "conteudo",
-          "imagem",
-          "ordem",
           "resumo",
           "slug",
-          "titulo"
+          "ordem",
+          "imagem",
+          "ano"
         ]
       },
       "conditions": [
@@ -226,13 +226,13 @@
       "subject": "api::evento-biografico.evento-biografico",
       "properties": {
         "fields": [
-          "ano",
+          "titulo",
           "conteudo",
-          "imagem",
-          "ordem",
           "resumo",
           "slug",
-          "titulo"
+          "ordem",
+          "imagem",
+          "ano"
         ]
       },
       "conditions": [

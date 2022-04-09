@@ -4,7 +4,64 @@
   "type": "authenticated",
   "permissions": [
     {
+      "action": "api::artigo.artigo.find"
+    },
+    {
+      "action": "api::artigo.artigo.findOne"
+    },
+    {
+      "action": "api::categoria.categoria.find"
+    },
+    {
+      "action": "api::categoria.categoria.findOne"
+    },
+    {
+      "action": "api::colaborador.colaborador.find"
+    },
+    {
+      "action": "api::colaborador.colaborador.findOne"
+    },
+    {
+      "action": "api::evento-biografico.evento-biografico.find"
+    },
+    {
+      "action": "api::evento-biografico.evento-biografico.findOne"
+    },
+    {
+      "action": "api::rede-social.rede-social.find"
+    },
+    {
+      "action": "api::rede-social.rede-social.findOne"
+    },
+    {
+      "action": "plugin::upload.content-api.find"
+    },
+    {
+      "action": "plugin::upload.content-api.findOne"
+    },
+    {
+      "action": "plugin::users-permissions.auth.callback"
+    },
+    {
       "action": "plugin::users-permissions.auth.connect"
+    },
+    {
+      "action": "plugin::users-permissions.auth.emailConfirmation"
+    },
+    {
+      "action": "plugin::users-permissions.auth.forgotPassword"
+    },
+    {
+      "action": "plugin::users-permissions.auth.register"
+    },
+    {
+      "action": "plugin::users-permissions.auth.resetPassword"
+    },
+    {
+      "action": "plugin::users-permissions.auth.sendEmailConfirmation"
+    },
+    {
+      "action": "plugin::users-permissions.permissions.getPermissions"
     },
     {
       "action": "plugin::users-permissions.user.me"

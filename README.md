@@ -34,11 +34,13 @@ yarn build
 
 ## Banco de dados
 
-Para executar a Enciropedia localmente, é necessário instalar o postgres na versão xxxx
+Para executar a Enciropedia localmente, é necessário instalar o PostgreSQL na versão 13.6.
+
+Crie, no banco local, o banco de dados `enciropedia`, o usuário `enciropedia`, com a senha `enciropedia`.
 
 ## Problemas
 
-**P: Quando eu entro no admin, algumás áreas mostram apenas páginas em branco. O que faço?**
+**P: Quando eu entro no admin, algumas áreas mostram apenas páginas em branco. O que faço?**
 
 Nesse caso, é preciso reiniciar o ambiente:
 
@@ -64,3 +66,8 @@ npm run build
 npm run develop
 
 ```
+
+## Referências
+
+- [Plugin Transformer](https://market.strapi.io/plugins/strapi-plugin-transformer)
+- [Discussion regarding the complex response structure for REST & GraphQL (Developer Experience)](https://forum.strapi.io/t/discussion-regarding-the-complex-response-structure-for-rest-graphql-developer-experience/13400)

@@ -8,8 +8,8 @@
       "searchable": true,
       "pageSize": 10,
       "mainField": "titulo",
-      "defaultSortBy": "titulo",
-      "defaultSortOrder": "ASC"
+      "defaultSortBy": "ordem",
+      "defaultSortOrder": "DESC"
     },
     "metadatas": {
       "id": {
@@ -22,8 +22,8 @@
       },
       "titulo": {
         "edit": {
-          "label": "titulo",
-          "description": "",
+          "label": "Título",
+          "description": "Título do evento",
           "placeholder": "",
           "visible": true,
           "editable": true
@@ -36,8 +36,8 @@
       },
       "conteudo": {
         "edit": {
-          "label": "conteudo",
-          "description": "",
+          "label": "Conteúdo",
+          "description": "Conteúdo do evento",
           "placeholder": "",
           "visible": true,
           "editable": true
@@ -50,8 +50,8 @@
       },
       "resumo": {
         "edit": {
-          "label": "resumo",
-          "description": "",
+          "label": "Resumo",
+          "description": "Um resumo curto do evento",
           "placeholder": "",
           "visible": true,
           "editable": true
@@ -64,36 +64,22 @@
       },
       "slug": {
         "edit": {
-          "label": "slug",
-          "description": "",
+          "label": "Slug",
+          "description": "Slug do evento",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
           "label": "slug",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "ano": {
-        "edit": {
-          "label": "ano",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "ano",
           "searchable": true,
           "sortable": true
         }
       },
       "ordem": {
         "edit": {
-          "label": "ordem",
-          "description": "",
+          "label": "Ordem",
+          "description": "No caso de cadastro de mais de um evento no mesmo ano, os eventos podem ser ordenados por um índice numérico, do menor para o maior,",
           "placeholder": "",
           "visible": true,
           "editable": true
@@ -106,8 +92,8 @@
       },
       "imagem": {
         "edit": {
-          "label": "imagem",
-          "description": "",
+          "label": "Imagem",
+          "description": "Imagem associada a esse evento",
           "placeholder": "",
           "visible": true,
           "editable": true
@@ -116,6 +102,50 @@
           "label": "imagem",
           "searchable": false,
           "sortable": false
+        }
+      },
+      "anterior": {
+        "edit": {
+          "label": "Anterior",
+          "description": "Evento anterior",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "ordem"
+        },
+        "list": {
+          "label": "anterior",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "proximo": {
+        "edit": {
+          "label": "Próximo",
+          "description": "Próximo evento",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "ordem"
+        },
+        "list": {
+          "label": "proximo",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "ano": {
+        "edit": {
+          "label": "Data ou período",
+          "description": "Data ou período do evento.",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "ano",
+          "searchable": true,
+          "sortable": true
         }
       },
       "createdAt": {
@@ -148,18 +178,27 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "titulo",
-        "resumo",
-        "slug"
-      ],
-      "editRelations": [],
       "edit": [
         [
           {
-            "name": "titulo",
+            "name": "ano",
             "size": 6
+          },
+          {
+            "name": "ordem",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "titulo",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "resumo",
+            "size": 12
           }
         ],
         [
@@ -170,22 +209,8 @@
         ],
         [
           {
-            "name": "resumo",
-            "size": 6
-          },
-          {
             "name": "slug",
             "size": 6
-          }
-        ],
-        [
-          {
-            "name": "ano",
-            "size": 4
-          },
-          {
-            "name": "ordem",
-            "size": 4
           }
         ],
         [
@@ -194,6 +219,15 @@
             "size": 6
           }
         ]
+      ],
+      "editRelations": [
+        "anterior",
+        "proximo"
+      ],
+      "list": [
+        "anterior",
+        "ordem",
+        "proximo"
       ]
     }
   },

@@ -8,36 +8,36 @@
       "searchable": true,
       "pageSize": 10,
       "mainField": "titulo",
-      "defaultSortBy": "titulo",
+      "defaultSortBy": "id",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
       "id": {
         "edit": {},
         "list": {
-          "label": "id",
+          "label": "ID",
           "searchable": true,
           "sortable": true
         }
       },
       "titulo": {
         "edit": {
-          "label": "titulo",
-          "description": "",
+          "label": "Título do artigo",
+          "description": "Informe um título para o artigo. ",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "titulo",
+          "label": "Título",
           "searchable": true,
           "sortable": true
         }
       },
       "descricao": {
         "edit": {
-          "label": "descricao",
-          "description": "",
+          "label": "Descrição",
+          "description": "Informe uma breve descrição para o artigo. Essa descrição será usada nas chamadas para esse artigo.",
           "placeholder": "",
           "visible": true,
           "editable": true
@@ -50,8 +50,8 @@
       },
       "conteudo": {
         "edit": {
-          "label": "conteudo",
-          "description": "",
+          "label": "Conteúdo",
+          "description": "Conteúdo do artigo. ",
           "placeholder": "",
           "visible": true,
           "editable": true
@@ -64,22 +64,22 @@
       },
       "slug": {
         "edit": {
-          "label": "slug",
-          "description": "",
+          "label": "Slug",
+          "description": "Slug do artigo",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "slug",
+          "label": "Slug",
           "searchable": true,
           "sortable": true
         }
       },
       "imagem": {
         "edit": {
-          "label": "imagem",
-          "description": "",
+          "label": "Imagem",
+          "description": "Imagem principal do artigo",
           "placeholder": "",
           "visible": true,
           "editable": true
@@ -92,8 +92,8 @@
       },
       "colaborador": {
         "edit": {
-          "label": "colaborador",
-          "description": "",
+          "label": "Colaborador",
+          "description": "Informe o Colaborador responsável por esse artigo.",
           "placeholder": "",
           "visible": true,
           "editable": true,
@@ -107,15 +107,15 @@
       },
       "categoria": {
         "edit": {
-          "label": "categoria",
-          "description": "",
+          "label": "Categoria",
+          "description": "Informe a categoria do artigo",
           "placeholder": "",
           "visible": true,
           "editable": true,
           "mainField": "categoria"
         },
         "list": {
-          "label": "categoria",
+          "label": "Categoria",
           "searchable": true,
           "sortable": true
         }
@@ -150,21 +150,17 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "titulo",
-        "descricao",
-        "slug"
-      ],
       "edit": [
         [
           {
             "name": "titulo",
-            "size": 6
-          },
+            "size": 12
+          }
+        ],
+        [
           {
             "name": "descricao",
-            "size": 6
+            "size": 12
           }
         ],
         [
@@ -176,16 +172,24 @@
         [
           {
             "name": "slug",
-            "size": 6
-          },
+            "size": 12
+          }
+        ],
+        [
           {
             "name": "imagem",
-            "size": 6
+            "size": 12
           }
         ]
       ],
       "editRelations": [
-        "colaborador",
+        "categoria",
+        "colaborador"
+      ],
+      "list": [
+        "id",
+        "titulo",
+        "slug",
         "categoria"
       ]
     }

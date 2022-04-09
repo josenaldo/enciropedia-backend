@@ -22,9 +22,9 @@
       },
       "nome": {
         "edit": {
-          "label": "nome",
-          "description": "",
-          "placeholder": "",
+          "label": "Nome",
+          "description": "Nome do colaborador",
+          "placeholder": "Nome",
           "visible": true,
           "editable": true
         },
@@ -36,9 +36,9 @@
       },
       "email": {
         "edit": {
-          "label": "email",
-          "description": "",
-          "placeholder": "",
+          "label": "Email",
+          "description": "Email do colaborador",
+          "placeholder": "Email",
           "visible": true,
           "editable": true
         },
@@ -50,8 +50,8 @@
       },
       "foto": {
         "edit": {
-          "label": "foto",
-          "description": "",
+          "label": "Foto",
+          "description": "Uma foto QUADRADA do Colaborador.",
           "placeholder": "",
           "visible": true,
           "editable": true
@@ -64,9 +64,9 @@
       },
       "descricao": {
         "edit": {
-          "label": "descricao",
-          "description": "",
-          "placeholder": "",
+          "label": "Descrição",
+          "description": "Um texto simples sobre o colaborador",
+          "placeholder": "Descrição",
           "visible": true,
           "editable": true
         },
@@ -78,8 +78,8 @@
       },
       "artigos": {
         "edit": {
-          "label": "artigos",
-          "description": "",
+          "label": "Artigos",
+          "description": "Artigos escritos pelo colaborador",
           "placeholder": "",
           "visible": true,
           "editable": true,
@@ -93,8 +93,8 @@
       },
       "redes_sociais": {
         "edit": {
-          "label": "redes_sociais",
-          "description": "",
+          "label": "Redes ",
+          "description": "Redes sociais do colaborador",
           "placeholder": "",
           "visible": true,
           "editable": true,
@@ -136,31 +136,17 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "nome",
-        "email",
-        "foto"
-      ],
-      "editRelations": [
-        "artigos",
-        "redes_sociais"
-      ],
       "edit": [
         [
           {
             "name": "nome",
-            "size": 6
-          },
-          {
-            "name": "email",
-            "size": 6
+            "size": 12
           }
         ],
         [
           {
-            "name": "foto",
-            "size": 6
+            "name": "email",
+            "size": 12
           }
         ],
         [
@@ -168,7 +154,23 @@
             "name": "descricao",
             "size": 12
           }
+        ],
+        [
+          {
+            "name": "foto",
+            "size": 6
+          }
         ]
+      ],
+      "editRelations": [
+        "artigos",
+        "redes_sociais"
+      ],
+      "list": [
+        "id",
+        "nome",
+        "email",
+        "foto"
       ]
     }
   },

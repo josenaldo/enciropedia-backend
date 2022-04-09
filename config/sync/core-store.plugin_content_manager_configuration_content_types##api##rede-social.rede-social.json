@@ -22,8 +22,8 @@
       },
       "link": {
         "edit": {
-          "label": "link",
-          "description": "",
+          "label": "URL",
+          "description": "URL da rede social ou email",
           "placeholder": "",
           "visible": true,
           "editable": true
@@ -36,8 +36,8 @@
       },
       "tipo": {
         "edit": {
-          "label": "tipo",
-          "description": "",
+          "label": "Tipo",
+          "description": "Tipo d arede social",
           "placeholder": "",
           "visible": true,
           "editable": true
@@ -78,11 +78,6 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "link",
-        "createdAt"
-      ],
       "edit": [
         [
           {
@@ -95,7 +90,12 @@
           }
         ]
       ],
-      "editRelations": []
+      "editRelations": [],
+      "list": [
+        "id",
+        "link",
+        "createdAt"
+      ]
     }
   },
   "type": "object",

@@ -180,9 +180,11 @@
           "conteudo",
           "resumo",
           "slug",
-          "ano",
           "ordem",
-          "imagem"
+          "imagem",
+          "anterior",
+          "proximo",
+          "ano"
         ]
       },
       "conditions": []
@@ -208,9 +210,11 @@
           "conteudo",
           "resumo",
           "slug",
-          "ano",
           "ordem",
-          "imagem"
+          "imagem",
+          "anterior",
+          "proximo",
+          "ano"
         ]
       },
       "conditions": []
@@ -224,9 +228,11 @@
           "conteudo",
           "resumo",
           "slug",
-          "ano",
           "ordem",
-          "imagem"
+          "imagem",
+          "anterior",
+          "proximo",
+          "ano"
         ]
       },
       "conditions": []
