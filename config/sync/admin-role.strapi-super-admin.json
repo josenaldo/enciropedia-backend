@@ -124,7 +124,9 @@
           "foto",
           "descricao",
           "artigos",
-          "redes_sociais"
+          "redes_sociais",
+          "username",
+          "slug"
         ]
       },
       "conditions": []
@@ -151,7 +153,9 @@
           "foto",
           "descricao",
           "artigos",
-          "redes_sociais"
+          "redes_sociais",
+          "username",
+          "slug"
         ]
       },
       "conditions": []
@@ -166,7 +170,9 @@
           "foto",
           "descricao",
           "artigos",
-          "redes_sociais"
+          "redes_sociais",
+          "username",
+          "slug"
         ]
       },
       "conditions": []

@@ -12,6 +12,7 @@
         "sqlite3": "5.0.2",
         "strapi-plugin-config-sync": "^1.0.0",
         "strapi-plugin-migrations": "^1.0.3",
+        "strapi-plugin-slugify": "^2.2.2",
         "strapi-plugin-transformer": "^2.0.1"
     },
     "name": "backend",

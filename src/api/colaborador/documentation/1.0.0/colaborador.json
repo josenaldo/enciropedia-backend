@@ -1547,6 +1547,12 @@
                                                             }
                                                           }
                                                         },
+                                                        "username": {
+                                                          "type": "string"
+                                                        },
+                                                        "slug": {
+                                                          "type": "string"
+                                                        },
                                                         "createdAt": {
                                                           "type": "string",
                                                           "format": "date-time"
@@ -1764,6 +1770,12 @@
                                     }
                                   }
                                 }
+                              },
+                              "username": {
+                                "type": "string"
+                              },
+                              "slug": {
+                                "type": "string"
                               },
                               "createdAt": {
                                 "type": "string",
@@ -3621,6 +3633,12 @@
                                                           }
                                                         }
                                                       },
+                                                      "username": {
+                                                        "type": "string"
+                                                      },
+                                                      "slug": {
+                                                        "type": "string"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -3838,6 +3856,12 @@
                                   }
                                 }
                               }
+                            },
+                            "username": {
+                              "type": "string"
+                            },
+                            "slug": {
+                              "type": "string"
                             },
                             "createdAt": {
                               "type": "string",
@@ -4063,6 +4087,12 @@
                       "email": {
                         "type": "string",
                         "format": "email"
+                      },
+                      "username": {
+                        "type": "string"
+                      },
+                      "slug": {
+                        "type": "string"
                       }
                     }
                   }
@@ -5618,6 +5648,12 @@
                                                           }
                                                         }
                                                       },
+                                                      "username": {
+                                                        "type": "string"
+                                                      },
+                                                      "slug": {
+                                                        "type": "string"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -5835,6 +5871,12 @@
                                   }
                                 }
                               }
+                            },
+                            "username": {
+                              "type": "string"
+                            },
+                            "slug": {
+                              "type": "string"
                             },
                             "createdAt": {
                               "type": "string",
@@ -7601,6 +7643,12 @@
                                                           }
                                                         }
                                                       },
+                                                      "username": {
+                                                        "type": "string"
+                                                      },
+                                                      "slug": {
+                                                        "type": "string"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -7818,6 +7866,12 @@
                                   }
                                 }
                               }
+                            },
+                            "username": {
+                              "type": "string"
+                            },
+                            "slug": {
+                              "type": "string"
                             },
                             "createdAt": {
                               "type": "string",
@@ -8096,6 +8150,12 @@
                           ],
                           "example": "string or id"
                         }
+                      },
+                      "username": {
+                        "type": "string"
+                      },
+                      "slug": {
+                        "type": "string"
                       },
                       "createdAt": {
                         "type": "string",

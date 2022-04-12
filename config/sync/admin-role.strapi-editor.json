@@ -119,12 +119,14 @@
       "subject": "api::colaborador.colaborador",
       "properties": {
         "fields": [
-          "artigos",
-          "descricao",
+          "nome",
           "email",
           "foto",
-          "nome",
-          "redes_sociais"
+          "descricao",
+          "artigos",
+          "redes_sociais",
+          "username",
+          "slug"
         ]
       },
       "conditions": []
@@ -146,12 +148,14 @@
       "subject": "api::colaborador.colaborador",
       "properties": {
         "fields": [
-          "artigos",
-          "descricao",
+          "nome",
           "email",
           "foto",
-          "nome",
-          "redes_sociais"
+          "descricao",
+          "artigos",
+          "redes_sociais",
+          "username",
+          "slug"
         ]
       },
       "conditions": []
@@ -161,12 +165,14 @@
       "subject": "api::colaborador.colaborador",
       "properties": {
         "fields": [
-          "artigos",
-          "descricao",
+          "nome",
           "email",
           "foto",
-          "nome",
-          "redes_sociais"
+          "descricao",
+          "artigos",
+          "redes_sociais",
+          "username",
+          "slug"
         ]
       },
       "conditions": []

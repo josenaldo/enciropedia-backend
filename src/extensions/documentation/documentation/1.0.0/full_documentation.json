@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-04-09T02:08:12.876Z"
+    "x-generation-date": "2022-04-11T21:31:36.508Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -1741,6 +1741,12 @@
                                                 }
                                               }
                                             }
+                                          },
+                                          "username": {
+                                            "type": "string"
+                                          },
+                                          "slug": {
+                                            "type": "string"
                                           },
                                           "createdAt": {
                                             "type": "string",
@@ -3812,6 +3818,12 @@
                                             }
                                           }
                                         },
+                                        "username": {
+                                          "type": "string"
+                                        },
+                                        "slug": {
+                                          "type": "string"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -5810,6 +5822,12 @@
                                             }
                                           }
                                         },
+                                        "username": {
+                                          "type": "string"
+                                        },
+                                        "slug": {
+                                          "type": "string"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -7789,6 +7807,12 @@
                                             }
                                           }
                                         },
+                                        "username": {
+                                          "type": "string"
+                                        },
+                                        "slug": {
+                                          "type": "string"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -9527,6 +9551,12 @@
                                                             }
                                                           }
                                                         },
+                                                        "username": {
+                                                          "type": "string"
+                                                        },
+                                                        "slug": {
+                                                          "type": "string"
+                                                        },
                                                         "createdAt": {
                                                           "type": "string",
                                                           "format": "date-time"
@@ -11210,6 +11240,12 @@
                                                           }
                                                         }
                                                       },
+                                                      "username": {
+                                                        "type": "string"
+                                                      },
+                                                      "slug": {
+                                                        "type": "string"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -12818,6 +12854,12 @@
                                                           }
                                                         }
                                                       },
+                                                      "username": {
+                                                        "type": "string"
+                                                      },
+                                                      "slug": {
+                                                        "type": "string"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -14409,6 +14451,12 @@
                                                             }
                                                           }
                                                         }
+                                                      },
+                                                      "username": {
+                                                        "type": "string"
+                                                      },
+                                                      "slug": {
+                                                        "type": "string"
                                                       },
                                                       "createdAt": {
                                                         "type": "string",
@@ -16626,6 +16674,12 @@
                                                             }
                                                           }
                                                         },
+                                                        "username": {
+                                                          "type": "string"
+                                                        },
+                                                        "slug": {
+                                                          "type": "string"
+                                                        },
                                                         "createdAt": {
                                                           "type": "string",
                                                           "format": "date-time"
@@ -16843,6 +16897,12 @@
                                     }
                                   }
                                 }
+                              },
+                              "username": {
+                                "type": "string"
+                              },
+                              "slug": {
+                                "type": "string"
                               },
                               "createdAt": {
                                 "type": "string",
@@ -18700,6 +18760,12 @@
                                                           }
                                                         }
                                                       },
+                                                      "username": {
+                                                        "type": "string"
+                                                      },
+                                                      "slug": {
+                                                        "type": "string"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -18917,6 +18983,12 @@
                                   }
                                 }
                               }
+                            },
+                            "username": {
+                              "type": "string"
+                            },
+                            "slug": {
+                              "type": "string"
                             },
                             "createdAt": {
                               "type": "string",
@@ -19142,6 +19214,12 @@
                       "email": {
                         "type": "string",
                         "format": "email"
+                      },
+                      "username": {
+                        "type": "string"
+                      },
+                      "slug": {
+                        "type": "string"
                       }
                     }
                   }
@@ -20697,6 +20775,12 @@
                                                           }
                                                         }
                                                       },
+                                                      "username": {
+                                                        "type": "string"
+                                                      },
+                                                      "slug": {
+                                                        "type": "string"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -20914,6 +20998,12 @@
                                   }
                                 }
                               }
+                            },
+                            "username": {
+                              "type": "string"
+                            },
+                            "slug": {
+                              "type": "string"
                             },
                             "createdAt": {
                               "type": "string",
@@ -22680,6 +22770,12 @@
                                                           }
                                                         }
                                                       },
+                                                      "username": {
+                                                        "type": "string"
+                                                      },
+                                                      "slug": {
+                                                        "type": "string"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -22897,6 +22993,12 @@
                                   }
                                 }
                               }
+                            },
+                            "username": {
+                              "type": "string"
+                            },
+                            "slug": {
+                              "type": "string"
                             },
                             "createdAt": {
                               "type": "string",
@@ -23175,6 +23277,12 @@
                           ],
                           "example": "string or id"
                         }
+                      },
+                      "username": {
+                        "type": "string"
+                      },
+                      "slug": {
+                        "type": "string"
                       },
                       "createdAt": {
                         "type": "string",

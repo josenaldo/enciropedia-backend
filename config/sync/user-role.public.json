@@ -40,6 +40,9 @@
       "action": "api::rede-social.rede-social.findOne"
     },
     {
+      "action": "plugin::slugify.slugController.findSlug"
+    },
+    {
       "action": "plugin::upload.content-api.find"
     },
     {

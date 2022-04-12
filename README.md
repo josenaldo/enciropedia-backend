@@ -70,4 +70,5 @@ npm run develop
 ## Referências
 
 - [Plugin Transformer](https://market.strapi.io/plugins/strapi-plugin-transformer)
-- [Discussion regarding the complex response structure for REST & GraphQL (Developer Experience)](https://forum.strapi.io/t/discussion-regarding-the-complex-response-structure-for-rest-graphql-developer-experience/13400)
+  - [Discussion regarding the complex response structure for REST & GraphQL (Developer Experience)](https://forum.strapi.io/t/discussion-regarding-the-complex-response-structure-for-rest-graphql-developer-experience/13400)
+- [Plugin Slugify](https://market.strapi.io/plugins/strapi-plugin-slugify)

@@ -106,6 +106,34 @@
           "sortable": false
         }
       },
+      "username": {
+        "edit": {
+          "label": "username",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "username",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "slug": {
+        "edit": {
+          "label": "slug",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "slug",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -136,6 +164,12 @@
       }
     },
     "layouts": {
+      "list": [
+        "id",
+        "nome",
+        "email",
+        "foto"
+      ],
       "edit": [
         [
           {
@@ -159,18 +193,22 @@
           {
             "name": "foto",
             "size": 6
+          },
+          {
+            "name": "username",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "slug",
+            "size": 6
           }
         ]
       ],
       "editRelations": [
         "artigos",
         "redes_sociais"
-      ],
-      "list": [
-        "id",
-        "nome",
-        "email",
-        "foto"
       ]
     }
   },

@@ -1176,6 +1176,12 @@
                                                             }
                                                           }
                                                         },
+                                                        "username": {
+                                                          "type": "string"
+                                                        },
+                                                        "slug": {
+                                                          "type": "string"
+                                                        },
                                                         "createdAt": {
                                                           "type": "string",
                                                           "format": "date-time"
@@ -2859,6 +2865,12 @@
                                                           }
                                                         }
                                                       },
+                                                      "username": {
+                                                        "type": "string"
+                                                      },
+                                                      "slug": {
+                                                        "type": "string"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -4467,6 +4479,12 @@
                                                           }
                                                         }
                                                       },
+                                                      "username": {
+                                                        "type": "string"
+                                                      },
+                                                      "slug": {
+                                                        "type": "string"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -6058,6 +6076,12 @@
                                                             }
                                                           }
                                                         }
+                                                      },
+                                                      "username": {
+                                                        "type": "string"
+                                                      },
+                                                      "slug": {
+                                                        "type": "string"
                                                       },
                                                       "createdAt": {
                                                         "type": "string",

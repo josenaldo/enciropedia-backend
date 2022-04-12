@@ -1607,7 +1607,8 @@
       "info": {
         "singularName": "colaborador",
         "pluralName": "colaboradores",
-        "displayName": "Colaborador"
+        "displayName": "Colaborador",
+        "description": ""
       },
       "options": {
         "draftAndPublish": true
@@ -1624,11 +1625,12 @@
           "unique": true
         },
         "foto": {
+          "type": "media",
+          "multiple": false,
+          "required": false,
           "allowedTypes": [
             "images"
-          ],
-          "type": "media",
-          "multiple": false
+          ]
         },
         "descricao": {
           "type": "richtext"
@@ -1643,6 +1645,15 @@
           "type": "relation",
           "relation": "oneToMany",
           "target": "api::rede-social.rede-social"
+        },
+        "username": {
+          "type": "string",
+          "required": true
+        },
+        "slug": {
+          "type": "uid",
+          "targetField": "username",
+          "required": true
         },
         "createdAt": {
           "type": "datetime"
@@ -1682,7 +1693,8 @@
         "info": {
           "singularName": "colaborador",
           "pluralName": "colaboradores",
-          "displayName": "Colaborador"
+          "displayName": "Colaborador",
+          "description": ""
         },
         "options": {
           "draftAndPublish": true
@@ -1699,11 +1711,12 @@
             "unique": true
           },
           "foto": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
             "allowedTypes": [
               "images"
-            ],
-            "type": "media",
-            "multiple": false
+            ]
           },
           "descricao": {
             "type": "richtext"
@@ -1718,6 +1731,15 @@
             "type": "relation",
             "relation": "oneToMany",
             "target": "api::rede-social.rede-social"
+          },
+          "username": {
+            "type": "string",
+            "required": true
+          },
+          "slug": {
+            "type": "uid",
+            "targetField": "username",
+            "required": true
           }
         },
         "kind": "collectionType"
