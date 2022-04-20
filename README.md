@@ -38,6 +38,21 @@ Para executar a Enciropedia localmente, é necessário instalar o PostgreSQL na 
 
 Crie, no banco local, o banco de dados `enciropedia`, o usuário `enciropedia`, com a senha `enciropedia`.
 
+No lugar de `enciropedia`, pra facilitar o deploy, use o mesmo nome do banco de dados e usuário de produção, na variável de ambiente `DATABASE_URL`.
+
+## Deploy do backend
+
+- Faça um backup do banco de dados de produção, no formato `Custom`
+- Faça um backup do banco de dados de desenvolvimento, no formato `Custom`
+- Resete o banco de dados de produção
+  - `heroku pg:reset DATABASE_URL`
+- Faça o restore do banco de dados de produção, usando o backup do bando de desenvolvimento
+- Faça push do código fonte
+
+## Deploy do frontend
+
+- Faça push do código fonte
+
 ## Problemas
 
 **P: Quando eu entro no admin, algumas áreas mostram apenas páginas em branco. O que faço?**
