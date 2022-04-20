@@ -28,6 +28,21 @@
       "action": "api::evento-biografico.evento-biografico.findOne"
     },
     {
+      "action": "api::favorito.favorito.create"
+    },
+    {
+      "action": "api::favorito.favorito.delete"
+    },
+    {
+      "action": "api::favorito.favorito.find"
+    },
+    {
+      "action": "api::favorito.favorito.findOne"
+    },
+    {
+      "action": "api::favorito.favorito.update"
+    },
+    {
       "action": "api::rede-social.rede-social.find"
     },
     {
@@ -62,6 +77,9 @@
     },
     {
       "action": "plugin::users-permissions.permissions.getPermissions"
+    },
+    {
+      "action": "plugin::users-permissions.user.find"
     },
     {
       "action": "plugin::users-permissions.user.me"

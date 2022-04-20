@@ -1273,6 +1273,7 @@
         }
       },
       "kind": "collectionType",
+      "__filename__": "schema.json",
       "__schema__": {
         "collectionName": "up_users",
         "info": {
@@ -1910,6 +1911,100 @@
       "uid": "api::evento-biografico.evento-biografico",
       "apiName": "evento-biografico",
       "globalId": "EventoBiografico",
+      "actions": {},
+      "lifecycles": {}
+    },
+    "api::favorito.favorito": {
+      "kind": "collectionType",
+      "collectionName": "favoritos",
+      "info": {
+        "singularName": "favorito",
+        "pluralName": "favoritos",
+        "displayName": "Favorito",
+        "description": ""
+      },
+      "options": {
+        "draftAndPublish": false
+      },
+      "pluginOptions": {},
+      "attributes": {
+        "user": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "plugin::users-permissions.user"
+        },
+        "artigo": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "api::artigo.artigo"
+        },
+        "anotacao": {
+          "type": "text",
+          "required": false
+        },
+        "createdAt": {
+          "type": "datetime"
+        },
+        "updatedAt": {
+          "type": "datetime"
+        },
+        "createdBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        },
+        "updatedBy": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "admin::user",
+          "configurable": false,
+          "writable": false,
+          "visible": false,
+          "useJoinTable": false,
+          "private": true
+        }
+      },
+      "__schema__": {
+        "collectionName": "favoritos",
+        "info": {
+          "singularName": "favorito",
+          "pluralName": "favoritos",
+          "displayName": "Favorito",
+          "description": ""
+        },
+        "options": {
+          "draftAndPublish": false
+        },
+        "pluginOptions": {},
+        "attributes": {
+          "user": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "plugin::users-permissions.user"
+          },
+          "artigo": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::artigo.artigo"
+          },
+          "anotacao": {
+            "type": "text",
+            "required": false
+          }
+        },
+        "kind": "collectionType"
+      },
+      "modelType": "contentType",
+      "modelName": "favorito",
+      "connection": "default",
+      "uid": "api::favorito.favorito",
+      "apiName": "favorito",
+      "globalId": "Favorito",
       "actions": {},
       "lifecycles": {}
     },

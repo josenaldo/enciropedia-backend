@@ -245,6 +245,48 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::favorito.favorito",
+      "properties": {
+        "fields": [
+          "user",
+          "artigo",
+          "anotacao"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::favorito.favorito",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::favorito.favorito",
+      "properties": {
+        "fields": [
+          "user",
+          "artigo",
+          "anotacao"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::favorito.favorito",
+      "properties": {
+        "fields": [
+          "user",
+          "artigo",
+          "anotacao"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::global.global",
       "properties": {
         "fields": [
