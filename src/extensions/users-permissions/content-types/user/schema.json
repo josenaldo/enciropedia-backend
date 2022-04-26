@@ -62,6 +62,22 @@
       "target": "plugin::users-permissions.role",
       "inversedBy": "users",
       "configurable": false
+    },
+    "fullname": {
+      "type": "string",
+      "required": false
+    },
+    "phone": {
+      "type": "string"
+    },
+    "cep": {
+      "type": "string"
+    },
+    "allowGroup": {
+      "type": "boolean"
+    },
+    "avatar": {
+      "type": "string"
     }
   }
 }

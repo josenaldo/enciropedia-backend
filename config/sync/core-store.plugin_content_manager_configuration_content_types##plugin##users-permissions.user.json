@@ -23,7 +23,7 @@
       "username": {
         "edit": {
           "label": "username",
-          "description": "",
+          "description": "Nome de usuário",
           "placeholder": "",
           "visible": true,
           "editable": true
@@ -36,8 +36,8 @@
       },
       "email": {
         "edit": {
-          "label": "email",
-          "description": "",
+          "label": "Email",
+          "description": "Email do usuário",
           "placeholder": "",
           "visible": true,
           "editable": true
@@ -64,8 +64,8 @@
       },
       "password": {
         "edit": {
-          "label": "password",
-          "description": "",
+          "label": "Senha",
+          "description": "Senha do usuário",
           "placeholder": "",
           "visible": true,
           "editable": true
@@ -106,8 +106,8 @@
       },
       "confirmed": {
         "edit": {
-          "label": "confirmed",
-          "description": "",
+          "label": "Usuário confirmado?",
+          "description": "Indica se o usuário já confirmou seu cadastro",
           "placeholder": "",
           "visible": true,
           "editable": true
@@ -120,8 +120,8 @@
       },
       "blocked": {
         "edit": {
-          "label": "blocked",
-          "description": "",
+          "label": "Bloqueado?",
+          "description": "Indica se o usuário está bloqueado.",
           "placeholder": "",
           "visible": true,
           "editable": true
@@ -143,6 +143,76 @@
         },
         "list": {
           "label": "role",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "fullname": {
+        "edit": {
+          "label": "Nome Completo",
+          "description": "Nome completo do usuário",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "fullname",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "phone": {
+        "edit": {
+          "label": "Telefone",
+          "description": "Telefone do usuário",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "phone",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "cep": {
+        "edit": {
+          "label": "CEP",
+          "description": "CEP do usuário",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "cep",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "allowGroup": {
+        "edit": {
+          "label": "Autoriza adição nos grupos do Whatsapp?",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "allowGroup",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "avatar": {
+        "edit": {
+          "label": "Foto do usuário",
+          "description": "ID da foto do Usuário no cloudinary",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "avatar",
           "searchable": true,
           "sortable": true
         }
@@ -177,23 +247,32 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "username",
-        "email",
-        "confirmed"
-      ],
-      "editRelations": [
-        "role"
-      ],
       "edit": [
         [
           {
+            "name": "fullname",
+            "size": 12
+          }
+        ],
+        [
+          {
             "name": "username",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "email",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "phone",
             "size": 6
           },
           {
-            "name": "email",
+            "name": "cep",
             "size": 6
           }
         ],
@@ -201,18 +280,39 @@
           {
             "name": "password",
             "size": 6
-          },
-          {
-            "name": "confirmed",
-            "size": 4
           }
         ],
         [
           {
+            "name": "confirmed",
+            "size": 6
+          },
+          {
             "name": "blocked",
-            "size": 4
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "allowGroup",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "avatar",
+            "size": 6
           }
         ]
+      ],
+      "editRelations": [
+        "role"
+      ],
+      "list": [
+        "id",
+        "username",
+        "email",
+        "confirmed"
       ]
     }
   },

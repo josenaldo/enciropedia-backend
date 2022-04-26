@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-04-18T17:08:53.190Z"
+    "x-generation-date": "2022-04-25T21:00:19.970Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -29897,6 +29897,21 @@
                                               }
                                             }
                                           },
+                                          "fullname": {
+                                            "type": "string"
+                                          },
+                                          "phone": {
+                                            "type": "string"
+                                          },
+                                          "cep": {
+                                            "type": "string"
+                                          },
+                                          "allowGroup": {
+                                            "type": "boolean"
+                                          },
+                                          "avatar": {
+                                            "type": "string"
+                                          },
                                           "createdAt": {
                                             "type": "string",
                                             "format": "date-time"
@@ -31827,6 +31842,21 @@
                                             }
                                           }
                                         },
+                                        "fullname": {
+                                          "type": "string"
+                                        },
+                                        "phone": {
+                                          "type": "string"
+                                        },
+                                        "cep": {
+                                          "type": "string"
+                                        },
+                                        "allowGroup": {
+                                          "type": "boolean"
+                                        },
+                                        "avatar": {
+                                          "type": "string"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -33728,6 +33758,21 @@
                                             }
                                           }
                                         },
+                                        "fullname": {
+                                          "type": "string"
+                                        },
+                                        "phone": {
+                                          "type": "string"
+                                        },
+                                        "cep": {
+                                          "type": "string"
+                                        },
+                                        "allowGroup": {
+                                          "type": "boolean"
+                                        },
+                                        "avatar": {
+                                          "type": "string"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -35566,6 +35611,21 @@
                                               }
                                             }
                                           }
+                                        },
+                                        "fullname": {
+                                          "type": "string"
+                                        },
+                                        "phone": {
+                                          "type": "string"
+                                        },
+                                        "cep": {
+                                          "type": "string"
+                                        },
+                                        "allowGroup": {
+                                          "type": "boolean"
+                                        },
+                                        "avatar": {
+                                          "type": "string"
                                         },
                                         "createdAt": {
                                           "type": "string",

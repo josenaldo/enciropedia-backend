@@ -477,6 +477,21 @@
                                               }
                                             }
                                           },
+                                          "fullname": {
+                                            "type": "string"
+                                          },
+                                          "phone": {
+                                            "type": "string"
+                                          },
+                                          "cep": {
+                                            "type": "string"
+                                          },
+                                          "allowGroup": {
+                                            "type": "boolean"
+                                          },
+                                          "avatar": {
+                                            "type": "string"
+                                          },
                                           "createdAt": {
                                             "type": "string",
                                             "format": "date-time"
@@ -2407,6 +2422,21 @@
                                             }
                                           }
                                         },
+                                        "fullname": {
+                                          "type": "string"
+                                        },
+                                        "phone": {
+                                          "type": "string"
+                                        },
+                                        "cep": {
+                                          "type": "string"
+                                        },
+                                        "allowGroup": {
+                                          "type": "boolean"
+                                        },
+                                        "avatar": {
+                                          "type": "string"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -4308,6 +4338,21 @@
                                             }
                                           }
                                         },
+                                        "fullname": {
+                                          "type": "string"
+                                        },
+                                        "phone": {
+                                          "type": "string"
+                                        },
+                                        "cep": {
+                                          "type": "string"
+                                        },
+                                        "allowGroup": {
+                                          "type": "boolean"
+                                        },
+                                        "avatar": {
+                                          "type": "string"
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -6146,6 +6191,21 @@
                                               }
                                             }
                                           }
+                                        },
+                                        "fullname": {
+                                          "type": "string"
+                                        },
+                                        "phone": {
+                                          "type": "string"
+                                        },
+                                        "cep": {
+                                          "type": "string"
+                                        },
+                                        "allowGroup": {
+                                          "type": "boolean"
+                                        },
+                                        "avatar": {
+                                          "type": "string"
                                         },
                                         "createdAt": {
                                           "type": "string",

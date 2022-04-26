@@ -574,7 +574,12 @@
           "confirmationToken",
           "confirmed",
           "blocked",
-          "role"
+          "role",
+          "fullname",
+          "phone",
+          "cep",
+          "allowGroup",
+          "avatar"
         ]
       },
       "conditions": []
@@ -598,7 +603,12 @@
           "confirmationToken",
           "confirmed",
           "blocked",
-          "role"
+          "role",
+          "fullname",
+          "phone",
+          "cep",
+          "allowGroup",
+          "avatar"
         ]
       },
       "conditions": []
@@ -616,7 +626,12 @@
           "confirmationToken",
           "confirmed",
           "blocked",
-          "role"
+          "role",
+          "fullname",
+          "phone",
+          "cep",
+          "allowGroup",
+          "avatar"
         ]
       },
       "conditions": []
