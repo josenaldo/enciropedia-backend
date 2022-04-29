@@ -120,6 +120,34 @@
           "sortable": true
         }
       },
+      "videoId": {
+        "edit": {
+          "label": "ID do Vídeo",
+          "description": "ID do vídeo do Youtube",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "videoId",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "data": {
+        "edit": {
+          "label": "data",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "data",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -150,6 +178,12 @@
       }
     },
     "layouts": {
+      "list": [
+        "id",
+        "titulo",
+        "slug",
+        "categoria"
+      ],
       "edit": [
         [
           {
@@ -180,17 +214,21 @@
             "name": "imagem",
             "size": 12
           }
+        ],
+        [
+          {
+            "name": "videoId",
+            "size": 6
+          },
+          {
+            "name": "data",
+            "size": 6
+          }
         ]
       ],
       "editRelations": [
         "categoria",
         "colaborador"
-      ],
-      "list": [
-        "id",
-        "titulo",
-        "slug",
-        "categoria"
       ]
     }
   },

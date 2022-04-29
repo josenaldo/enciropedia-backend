@@ -6,12 +6,12 @@
       "icon": "sync",
       "options": {
         "from": {
-          "name": "Administration Panel",
-          "email": "no-reply@strapi.io"
+          "name": "Enciropedia",
+          "email": "no-reply@enciropedia.com.br"
         },
         "response_email": "",
-        "object": "Reset password",
-        "message": "<p>We heard that you lost your password. Sorry about that!</p>\n\n<p>But don’t worry! You can use the following link to reset your password:</p>\n<p><%= URL %>?code=<%= TOKEN %></p>\n\n<p>Thanks.</p>"
+        "object": "Resetar senha",
+        "message": "<p>Parece que você esqueceu sua senha. Que chato, né?!</p>\n\n<p>Mas não se preocupe! Você pode usar o link abaixo pra resetar sua senha:</p>\n<p><%= URL %>?code=<%= TOKEN %></p>\n\n<p>Obrigado, Turma Boa.</p>"
       }
     },
     "email_confirmation": {

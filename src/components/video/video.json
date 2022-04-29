@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_video_videos",
+  "info": {
+    "displayName": "Vídeo",
+    "icon": "video"
+  },
+  "options": {},
+  "attributes": {
+    "videoId": {
+      "type": "string",
+      "required": true
+    },
+    "titulo": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

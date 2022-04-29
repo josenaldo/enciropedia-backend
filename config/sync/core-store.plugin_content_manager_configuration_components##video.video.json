@@ -1,0 +1,77 @@
+{
+  "key": "plugin_content_manager_configuration_components::video.video",
+  "value": {
+    "uid": "video.video",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "videoId",
+      "defaultSortBy": "videoId",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "videoId": {
+        "edit": {
+          "label": "videoId",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "videoId",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "titulo": {
+        "edit": {
+          "label": "titulo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "titulo",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "videoId",
+        "titulo"
+      ],
+      "edit": [
+        [
+          {
+            "name": "videoId",
+            "size": 6
+          },
+          {
+            "name": "titulo",
+            "size": 6
+          }
+        ]
+      ],
+      "editRelations": []
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

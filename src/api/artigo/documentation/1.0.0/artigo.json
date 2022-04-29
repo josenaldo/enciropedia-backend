@@ -1551,6 +1551,13 @@
                                                             }
                                                           }
                                                         },
+                                                        "videoId": {
+                                                          "type": "string"
+                                                        },
+                                                        "data": {
+                                                          "type": "string",
+                                                          "format": "date-time"
+                                                        },
                                                         "createdAt": {
                                                           "type": "string",
                                                           "format": "date-time"
@@ -1766,6 +1773,13 @@
                                     }
                                   }
                                 }
+                              },
+                              "videoId": {
+                                "type": "string"
+                              },
+                              "data": {
+                                "type": "string",
+                                "format": "date-time"
                               },
                               "createdAt": {
                                 "type": "string",
@@ -3627,6 +3641,13 @@
                                                           }
                                                         }
                                                       },
+                                                      "videoId": {
+                                                        "type": "string"
+                                                      },
+                                                      "data": {
+                                                        "type": "string",
+                                                        "format": "date-time"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -3842,6 +3863,13 @@
                                   }
                                 }
                               }
+                            },
+                            "videoId": {
+                              "type": "string"
+                            },
+                            "data": {
+                              "type": "string",
+                              "format": "date-time"
                             },
                             "createdAt": {
                               "type": "string",
@@ -5631,6 +5659,13 @@
                                                           }
                                                         }
                                                       },
+                                                      "videoId": {
+                                                        "type": "string"
+                                                      },
+                                                      "data": {
+                                                        "type": "string",
+                                                        "format": "date-time"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -5846,6 +5881,13 @@
                                   }
                                 }
                               }
+                            },
+                            "videoId": {
+                              "type": "string"
+                            },
+                            "data": {
+                              "type": "string",
+                              "format": "date-time"
                             },
                             "createdAt": {
                               "type": "string",
@@ -7616,6 +7658,13 @@
                                                           }
                                                         }
                                                       },
+                                                      "videoId": {
+                                                        "type": "string"
+                                                      },
+                                                      "data": {
+                                                        "type": "string",
+                                                        "format": "date-time"
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -7831,6 +7880,13 @@
                                   }
                                 }
                               }
+                            },
+                            "videoId": {
+                              "type": "string"
+                            },
+                            "data": {
+                              "type": "string",
+                              "format": "date-time"
                             },
                             "createdAt": {
                               "type": "string",
@@ -8105,6 +8161,13 @@
                           }
                         ],
                         "example": "string or id"
+                      },
+                      "videoId": {
+                        "type": "string"
+                      },
+                      "data": {
+                        "type": "string",
+                        "format": "date-time"
                       },
                       "createdAt": {
                         "type": "string",

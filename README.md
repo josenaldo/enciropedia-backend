@@ -48,6 +48,7 @@ No lugar de `enciropedia`, pra facilitar o deploy, use o mesmo nome do banco de 
   - `heroku pg:reset DATABASE_URL`
 - Faça o restore do banco de dados de produção, usando o backup do bando de desenvolvimento
 - Faça push do código fonte
+  - `git push heroku`
 
 ## Deploy do frontend
 

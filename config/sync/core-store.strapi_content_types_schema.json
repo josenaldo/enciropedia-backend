@@ -1431,6 +1431,12 @@
           "target": "api::categoria.categoria",
           "inversedBy": "artigos"
         },
+        "videoId": {
+          "type": "string"
+        },
+        "data": {
+          "type": "datetime"
+        },
         "createdAt": {
           "type": "datetime"
         },
@@ -1513,6 +1519,12 @@
             "relation": "manyToOne",
             "target": "api::categoria.categoria",
             "inversedBy": "artigos"
+          },
+          "videoId": {
+            "type": "string"
+          },
+          "data": {
+            "type": "datetime"
           }
         },
         "kind": "collectionType"
