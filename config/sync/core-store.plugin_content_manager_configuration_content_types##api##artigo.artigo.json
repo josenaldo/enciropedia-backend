@@ -136,8 +136,8 @@
       },
       "data": {
         "edit": {
-          "label": "data",
-          "description": "",
+          "label": "Data do Artigo",
+          "description": "Data do artigo",
           "placeholder": "",
           "visible": true,
           "editable": true
@@ -178,12 +178,6 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "titulo",
-        "slug",
-        "categoria"
-      ],
       "edit": [
         [
           {
@@ -229,6 +223,12 @@
       "editRelations": [
         "categoria",
         "colaborador"
+      ],
+      "list": [
+        "id",
+        "titulo",
+        "slug",
+        "categoria"
       ]
     }
   },
